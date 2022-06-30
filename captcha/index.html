@@ -6,29 +6,24 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Captcha</title>
-    <link rel="stylesheet" type="text/css" href="styles.css">
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
 <body>
-    <div class="center">
-
-        <div id="captchaBackground">
+    <div class=" flex justify-center items-center">
+        <div class="max-w-4xl border bg-amber-200 flex flex-col gap-3 justify-center">
             <canvas id="captcha">captcha text</canvas>
-            <input id="textBox" type="text" name="text">
-            <div id="buttons">
-                <input id="submitButton" type="submit">
-                <button id="refreshButton" type="submit">Refresh</button>
+            <input id="textBox" class="mx-3 py-1 px-3 border" type="text" name="text">
+            <div id="buttons" class="flex justify-center items-center gap-4 my-3">
+                <button id="submitBtn" type="submit" class="px-5 py-2  rounded-md bg-violet-700 text-white">
+                    Submit
+                </button>
+
+                <button id="refreshButton" type="submit" class="px-5 rounded-md py-2 bg-gray-100">Refresh</button>
             </div>
             <span id="output"></span>
         </div>
     </div>
-
-    <div>
-
-
-    </div>
-
 
 </body>
 
